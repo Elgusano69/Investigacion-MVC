@@ -44,6 +44,11 @@ Las vistas son responsables de:
 - Tienen un registro de su controlador asociado (normalmente porque además lo instancia).
 - Pueden dar el servicio de "Actualización()", para que sea invocado por el controlador o por el modelo (cuando es un modelo activo que informa de los cambios en los datos producidos por otros agentes).
 
+## Modelo
+El modelo define qué datos debe contener la aplicación. Si el estado de estos datos cambia, el modelo generalmente notificará a la vista (para que la pantalla pueda cambiar según sea necesario) y, a veces, el controlador (si se necesita una lógica diferente para controlar la vista actualizada).
+
+Volviendo a nuestra aplicación de lista de compras, el modelo especificará qué datos deben contener los artículos de la lista (artículo, precio, etc.) y qué artículos de la lista ya están presentes.
+
 ## Ejemplo MVC
 Aqui veremos ejemplo de un modelo MVC 
 - El controlador
